@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+    <script language="javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <!-- Demo styles -->
+</head>
+<body>
+    <header class="">
+        <div class="container">
+            <div class="flex justify-between">
+                <div class="flex items-center my-6">
+                    <div class="flex items-center">
+                        <span class="header-menu-bar block lg:hidden mr-4 text-lg">
+                            <i class="fa-solid fa-bars"></i>
+                        </span>
+                        <a href="" class="h-img mr-8">
+                            <img src="img/LOGO.png" alt="" class="">
+                        </a>
+                    </div>
+                    <form action="" class="hidden lg:block form-search relative">
+                        <button class="btn-search absolute"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <input type="text" class="pl-10 py-2 px-3" placeholder="Tìm kiếm">
+                    </form>
+                </div>
+                <div class="flex items-center gap-4 my-6">
+                    <a href="" class="lg:inline hidden">
+                        <p class="">Liên hệ</p>
+                    </a>
+                    <div class="lg:block hidden call-header p-2 text-white rounded-xl relative">
+                        <span class="">EN</span>
+                        <span class=""><i class="fa-solid fa-caret-down"></i></span>
+                        <ul class="rounded-xl z-10">
+                            <li class="p-2">EN</li>
+                            <li class="p-2">VI</li>
+                        </ul>
+                    </div>
+                    <a href="" class="flex items-center btn-cart p-2 w-10 h-10  ">
+                        <img src="img/Vector.png" alt="" class="">
+                    </a>
+                    <div class="customer-header relative">
+                        <a href="" class="h-10 w-10 overflow-hidden rounded-full block">
+                            <img src="img/3d78f8c386aa40d6295835da8e9a82e4.jpg" alt="" class="">
+                        </a>
+                        <ul class="p-2">
+                            <li class="py-3 px-2 font-medium text-sm">
+                                <a href="" class="link">Thông tin tài khoản</a>
+                            </li>
+                            <li  class="py-3 px-2 font-medium text-sm">
+                                <a href="" class="">Về Deasung</a>
+                            </li>
+                            <li class="py-3 px-2 font-medium text-sm">
+                                <a href="" class="">Tra cứu đơn hàng</a>
+                            </li>
+                            <li class="py-3 px-2 font-medium text-sm">
+                                <a href="" class="">Chính sách bảo hành</a>
+                            </li>
+                            <li class="py-3 px-2 font-medium text-sm">
+                                <a href="" class="">Liên hệ hỗ trợ</a>
+                            </li>
+                            <li class="py-3 px-2 font-medium text-sm">
+                                <a href="" class="">Đăng xuất<i class="ml-2 fa-solid fa-right-from-bracket"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-2 block lg:hidden container">
+                <form action="" class="relative form-search">
+                    <button class="btn-search w-5 h-5 absolute"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <input type="text" class="form-control pl-10 py-2 px-3 rounded-lg w-full" placeholder="Tìm kiếm">
+                </form>
+            </div>
+        </div>  
+        <div class="over-lay lg:hidden"></div>
+        <div class="header-lists  w-full z-50">
+            <div class="container">
+                <ul class="flex lg:justify-center fixed lg:static flex-col lg:flex-row menu">
+                    <a href="" class="block my-6 mx-auto lg:hidden">
+                        <img src="img/LOGO.png" alt="" class="">
+                    </a>
+                    <div class="flex lg:hidden mb-4 items-center justify-center">
+                        <a href="" class="link px-4 font-semibold">VI</a>
+                        <a href="" class="link px-4 font-semibold">EN</a>
+                    </div>
+                    <li class="">
+                        <a href="" class="lg:py-5 lg:px-4 uppercase">Trang chủ</a>
+                    </li>
+                    <li class="relative">
+                        <a href="" class="lg:py-5 lg:px-4 uppercase">Kéo cắt vải </a>
+                        <span class="lg:hidden btn-dropdown-menu"><i class="fa fa-angle-down"></i></span>
+                        <ul class="">
+                            <li class="">
+                                <a href="" class="">Kéo cắt gà VKS-003</a>
+                            </li>
+                            <li class="">
+                                <a href="" class="">Kéo cắt gà VKS-008</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="relative">   
+                        <a href="" class="lg:py-5 lg:px-4 uppercase">Kéo nhà bếp</a>
+                        <span class="lg:hidden btn-dropdown-menu"><i class="fa fa-angle-down"></i></span>
+                        <ul class="">
+                            <li class="">
+                                <a href="" class="">Kéo cắt gà VKS-003</a>
+                            </li>
+                            <li class="">
+                                <a href="" class="">Kéo cắt gà VKS-008</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="" class="lg:py-5 lg:px-4 uppercase">Kéo cắt cành</a>
+                    </li>
+                    <li class="">
+                        <a href="" class="lg:py-5 lg:px-4 uppercase">Kéo cắt tóc</a>
+                    </li>
+                    <li class="">
+                        <a href="" class="lg:py-5 lg:px-4 uppercase">Tin tức</a>
+                    </li>
+                    <li class="">
+                        <a href="" class="lg:py-5 lg:px-4 uppercase">Afffiliate</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="banner">
+        <div class="swiper-container swiper-banner">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide relative">
+                <div class="w-full h-full img-banner block overflow-hidden">
+                    <img src="img/a2ebeb474c6d977b2ab01d7c53fc5c86.png" alt="" class="">
+                </div>
+                <div class="container mt-4 lg:mt-0 lg:absolute h-full flex items-center">
+                    <div class="">
+                        <h2 class="uppercase font-bold text-5xl text-white mb-1">Kéo gia dụng</h2>
+                        <div class="font-semibold text-sm text-white mb-3">Ý thức trách nhiệm nâng niu bàn tay Việt và trải nghiệm sống cho người Việt.  </div>
+                        <a href="" class="py-4 px-8 btn btn-banner rounded-2xl">Tìm hiểu thêm</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <section class="why mt-14">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="font-bold text-4xl leading-10">Tại sao lại chọn DAESUNG</h2>
+                <p class="text-xs mt-1 mb-7">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy <br> consectetuer adipiscing elit, sed diam nonummy.Lorem ipsum dolor sit amet, consectetuer adipiscingsectetuer adipi.</p>
+            </div>
+            <div class="flex">
+                <div class="flex-1 mr-5">
+                    <div class="mb-4">
+                        <img src="img/7a86603010595ca9eac7db9d264a7691.png" alt="" class="">
+                    </div>
+                    <p class="text-sm text-center">Là doanh nghiệp sản xuất kéo số 1 Việt Nam- Hàng Việt của người Việt.</p>
+                </div>
+                <div class="flex-1 mr-5">
+                    <div class="mb-4">
+                        <img src="img/7a86603010595ca9eac7db9d264a7691.png" alt="" class="">
+                    </div>
+                    <p class="text-sm text-center">Là doanh nghiệp sản xuất kéo số 1 Việt Nam- Hàng Việt của người Việt.</p>
+                </div>
+                <div class="flex-1 mr-5">
+                    <div class="mb-4">
+                        <img src="img/7a86603010595ca9eac7db9d264a7691.png" alt="" class="">
+                    </div>
+                    <p class="text-sm text-center">Là doanh nghiệp sản xuất kéo số 1 Việt Nam- Hàng Việt của người Việt.</p>
+                </div>
+                <div class="flex-1">
+                    <div class="mb-4">
+                        <img src="img/7a86603010595ca9eac7db9d264a7691.png" alt="" class="">
+                    </div>
+                    <p class="text-sm text-center">Là doanh nghiệp sản xuất kéo số 1 Việt Nam- Hàng Việt của người Việt.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="product">
+        <div class="container">
+            <div class="text-center mt-12 mb-8 inline-block w-full">
+                <p class="text-4xl font-bold text-white">Sản phẩm nổi bật</p>
+            </div>
+            <div class="flex product-child">
+                <div class="flex-1 mx-9">
+                    <span class="absolute p-2 text-sm font-semibold m-2">-25%</span>
+                    <div class="bg-white c-img pt-116">
+                        <img src="img/bf40c338e899e57ef30fec2d00e865ec.png" alt="" class="">
+                    </div>
+                    <div class="text-center text-white text-product-child">
+                        
+                        <p class="mb-4 text-lg font-extrabold line-clamp-2">Kéo ngắn</p>
+                        <p class="line-through text-xs">200.000 VNĐ</p>
+                        <p class="font-semibold mb-4">100.000 VNĐ</p>
+                    </div>
+                    <a href="" class="flex justify-center w-full items-center btn-red text-white">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Add to cart
+                    </a>
+                </div>
+                <div class="flex-1 mx-9">
+                    <span class="absolute p-2 text-sm font-semibold m-2">-25%</span>
+                    <div class="bg-white c-img pt-116">
+                        <img src="img/bf40c338e899e57ef30fec2d00e865ec.png" alt="" class="">
+                    </div>
+                    <div class="text-center text-white text-product-child">
+                        
+                        <p class="mb-4 text-lg font-extrabold line-clamp-2">Kéo ngắn</p>
+                        <p class="line-through text-xs">200.000 VNĐ</p>
+                        <p class="font-semibold mb-4">100.000 VNĐ</p>
+                    </div>
+                    <a href="" class="flex justify-center w-full items-center btn-red text-white">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Add to cart
+                    </a>
+                </div>
+                <div class="flex-1 mx-9">
+                    <span class="absolute p-2 text-sm font-semibold m-2">-25%</span>
+                    <div class="bg-white c-img pt-116">
+                        <img src="img/bf40c338e899e57ef30fec2d00e865ec.png" alt="" class="">
+                    </div>
+                    <div class="text-center text-white text-product-child">
+                        
+                        <p class="mb-4 text-lg font-extrabold line-clamp-2">Kéo ngắn</p>
+                        <p class="line-through text-xs">200.000 VNĐ</p>
+                        <p class="font-semibold mb-4">100.000 VNĐ</p>
+                    </div>
+                    <a href="" class="flex justify-center w-full items-center btn-red text-white">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Add to cart
+                    </a>
+                </div>
+                <div class="flex-1 mx-9">
+                    <span class="absolute p-2 text-sm font-semibold m-2">-25%</span>
+                    <div class="bg-white c-img pt-116">
+                        <img src="img/bf40c338e899e57ef30fec2d00e865ec.png" alt="" class="">
+                    </div>
+                    <div class="text-center text-white text-product-child">
+                        
+                        <p class="mb-4 text-lg font-extrabold line-clamp-2">Kéo ngắn</p>
+                        <p class="line-through text-xs">200.000 VNĐ</p>
+                        <p class="font-semibold mb-4">100.000 VNĐ</p>
+                    </div>
+                    <a href="" class="flex justify-center w-full items-center btn-red text-white">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Add to cart
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./chan.js"></script>
+</body>
+
+</html>
