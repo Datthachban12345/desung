@@ -21,15 +21,15 @@
   <!-- Demo styles -->
 </head>
 <body>
-    <header class="">
-        <div class="container">
+    <header class="fixed z-50 w-full close-header bg-white">
+        <div class="container w-full px-3">
             <div class="flex justify-between">
-                <div class="flex items-center my-6">
+                <div class="flex items-center my-3 sm:my-6">
                     <div class="flex items-center">
                         <span class="header-menu-bar block lg:hidden mr-4 text-lg">
                             <i class="fa-solid fa-bars"></i>
                         </span>
-                        <a href="" class="h-img mr-8">
+                        <a href="" class="h-img mr-8 max-3">
                             <img src="img/LOGO.png" alt="" class="">
                         </a>
                     </div>
@@ -38,7 +38,7 @@
                         <input type="text" class="pl-10 py-2 px-3" placeholder="Tìm kiếm">
                     </form>
                 </div>
-                <div class="flex items-center gap-4 my-6">
+                <div class="flex items-center gap-4 my-3 sm:my-6">
                     <a href="" class="lg:inline hidden">
                         <p class="">Liên hệ</p>
                     </a>
@@ -80,7 +80,7 @@
                     </div>
                 </div>
             </div>
-            <div class="mt-2 block lg:hidden container">
+            <div class="mt-2 block lg:hidden container mb-4">
                 <form action="" class="relative form-search">
                     <button class="btn-search w-5 h-5 absolute"><i class="fa-solid fa-magnifying-glass"></i></button>
                     <input type="text" class="form-control pl-10 py-2 px-3 rounded-lg w-full" placeholder="Tìm kiếm">
@@ -141,7 +141,7 @@
             </div>
         </div>
     </header>
-    <section class="banner">
+    <section class="banner pt-52 lg:pt-0">
         <div class="swiper-container swiper-banner">
             <div class="swiper-wrapper">
               <div class="swiper-slide relative">
@@ -149,42 +149,42 @@
                     <img src="img/a2ebeb474c6d977b2ab01d7c53fc5c86.png" alt="" class="">
                 </div>
                 <div class="container mt-4 lg:mt-0 lg:absolute h-full flex items-center">
-                    <div class="">
-                        <h2 class="uppercase font-bold text-5xl text-white mb-1">Kéo gia dụng</h2>
-                        <div class="font-semibold text-sm text-white mb-3">Ý thức trách nhiệm nâng niu bàn tay Việt và trải nghiệm sống cho người Việt.  </div>
-                        <a href="" class="py-4 px-8 btn btn-banner rounded-2xl">Tìm hiểu thêm</a>
+                    <div class="FadeInLeft">
+                        <h2 class="uppercase font-bold lg:text-3xl text-xl 2xl:text-5xl text-black lg:text-white mb-1">Kéo gia dụng</h2>
+                        <div class="font-semibold text-sm text-black lg:text-white mb-3">Ý thức trách nhiệm nâng niu bàn tay Việt và trải nghiệm sống cho người Việt.  </div>
+                        <a href="" class="py-4 px-8 btn btn-banner">Tìm hiểu thêm</a>
                     </div>
                 </div>
               </div>
             </div>
           </div>
     </section>
-    <section class="why mt-14">
+    <section class="why my-8 lg:my-14">
         <div class="container">
             <div class="text-center">
-                <h2 class="font-bold text-4xl leading-10">Tại sao lại chọn DAESUNG</h2>
-                <p class="text-xs mt-1 mb-7">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy <br> consectetuer adipiscing elit, sed diam nonummy.Lorem ipsum dolor sit amet, consectetuer adipiscingsectetuer adipi.</p>
+                <h2 class="font-bold 2xl:text-4xl lg:text-2xl text-xl leading-10 FadeInUp">Tại sao lại chọn DAESUNG</h2>
+                <p class="text-xs mt-1 mb-7 FadeInUp">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy <br> consectetuer adipiscing elit, sed diam nonummy.Lorem ipsum dolor sit amet, consectetuer adipiscingsectetuer adipi.</p>
             </div>
-            <div class="flex">
-                <div class="flex-1 mr-5">
+            <div class="flex flex-wrap">
+                <div class="w-1/2 px-2 mb-4 lg:w-1/4 FadeInUp">
                     <div class="mb-4">
                         <img src="img/7a86603010595ca9eac7db9d264a7691.png" alt="" class="">
                     </div>
                     <p class="text-sm text-center">Là doanh nghiệp sản xuất kéo số 1 Việt Nam- Hàng Việt của người Việt.</p>
                 </div>
-                <div class="flex-1 mr-5">
+                <div class="w-1/2 px-2 mb-4 lg:w-1/4 FadeInUp">
                     <div class="mb-4">
                         <img src="img/7a86603010595ca9eac7db9d264a7691.png" alt="" class="">
                     </div>
                     <p class="text-sm text-center">Là doanh nghiệp sản xuất kéo số 1 Việt Nam- Hàng Việt của người Việt.</p>
                 </div>
-                <div class="flex-1 mr-5">
+                <div class="w-1/2 px-2 mb-4 lg:w-1/4 FadeInUp">
                     <div class="mb-4">
                         <img src="img/7a86603010595ca9eac7db9d264a7691.png" alt="" class="">
                     </div>
                     <p class="text-sm text-center">Là doanh nghiệp sản xuất kéo số 1 Việt Nam- Hàng Việt của người Việt.</p>
                 </div>
-                <div class="flex-1">
+                <div class="w-1/2 px-2 mb-4 lg:w-1/4 FadeInUp">
                     <div class="mb-4">
                         <img src="img/7a86603010595ca9eac7db9d264a7691.png" alt="" class="">
                     </div>
@@ -196,76 +196,231 @@
     <section class="product">
         <div class="container">
             <div class="text-center mt-12 mb-8 inline-block w-full">
-                <p class="text-4xl font-bold text-white">Sản phẩm nổi bật</p>
+                <p class="2xl:text-4xl lg:text-2xl text-xl font-bold text-white FadeInUp">Sản phẩm nổi bật</p>
             </div>
-            <div class="flex product-child">
-                <div class="flex-1 mx-9">
-                    <span class="absolute p-2 text-sm font-semibold m-2">-25%</span>
-                    <div class="bg-white c-img pt-116">
-                        <img src="img/bf40c338e899e57ef30fec2d00e865ec.png" alt="" class="">
+            <div class="flex flex-wrap product-child pb-9 justify-center">
+                <div class="lg:w-1/4 w-1/2 px-2 mb-4 2xl:px-8 2xl:mb-16 FadeInUp">
+                    <div class="h-full flex flex-col justify-between">
+                        <span class="absolute p-2 text-sm font-semibold m-2 text-white">-25%</span>
+                        <div class="bg-white c-img pt-116">
+                            <img src="img/bf40c338e899e57ef30fec2d00e865ec.png" alt="" class="">
+                        </div>
+                        <div class="text-center text-white text-product-child p-4">
+                            
+                            <a href="" class=""><p class="mb-4 lg:text-lg text-sm font-extrabold line-clamp-2">Kéo ngắn</p></a>
+                            <p class="line-through text-xs text-888">200.000 VNĐ</p>
+                            <p class="font-semibold mb-0 lg:mb-4">100.000 VNĐ</p>
+                        </div>
+                        <a href="" class="flex justify-center w-full items-center btn-product btn-red p-2 text-white">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add to cart
+                        </a>
                     </div>
-                    <div class="text-center text-white text-product-child">
-                        
-                        <p class="mb-4 text-lg font-extrabold line-clamp-2">Kéo ngắn</p>
-                        <p class="line-through text-xs">200.000 VNĐ</p>
-                        <p class="font-semibold mb-4">100.000 VNĐ</p>
-                    </div>
-                    <a href="" class="flex justify-center w-full items-center btn-red text-white">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        Add to cart
-                    </a>
                 </div>
-                <div class="flex-1 mx-9">
-                    <span class="absolute p-2 text-sm font-semibold m-2">-25%</span>
-                    <div class="bg-white c-img pt-116">
-                        <img src="img/bf40c338e899e57ef30fec2d00e865ec.png" alt="" class="">
+                <div class="lg:w-1/4 w-1/2 px-2 mb-4 2xl:px-8 2xl:mb-16 h-auto FadeInUp">
+                    <div class="h-full flex flex-col justify-between">
+                        <span class="absolute p-2 text-sm font-semibold m-2 text-white">-25%</span>
+                        <div class="bg-white c-img pt-116">
+                            <img src="img/bf40c338e899e57ef30fec2d00e865ec.png" alt="" class="">
+                        </div>
+                        <div class="text-center text-white text-product-child p-4">
+                            
+                            <a href="" class=""><p class="mb-4 lg:text-lg text-sm font-extrabold line-clamp-2">Kéo ngắn không cầm được nhưng cũng không cắt được chẳng ai thèm mua</p></a>
+                            <p class="line-through text-xs text-888">2.000.000.000 VNĐ</p>
+                            <p class="font-semibold mb-0 lg:mb-4">1.000.000.000 VNĐ</p>
+                        </div>
+                        <a href="" class="flex justify-center w-full items-center btn-product btn-red p-2 text-white">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add to cart
+                        </a>
                     </div>
-                    <div class="text-center text-white text-product-child">
-                        
-                        <p class="mb-4 text-lg font-extrabold line-clamp-2">Kéo ngắn</p>
-                        <p class="line-through text-xs">200.000 VNĐ</p>
-                        <p class="font-semibold mb-4">100.000 VNĐ</p>
-                    </div>
-                    <a href="" class="flex justify-center w-full items-center btn-red text-white">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        Add to cart
-                    </a>
                 </div>
-                <div class="flex-1 mx-9">
-                    <span class="absolute p-2 text-sm font-semibold m-2">-25%</span>
-                    <div class="bg-white c-img pt-116">
-                        <img src="img/bf40c338e899e57ef30fec2d00e865ec.png" alt="" class="">
+                <div class="lg:w-1/4 w-1/2 px-2 mb-4 2xl:px-8 2xl:mb-16 FadeInUp">
+                    <div class="h-full flex flex-col justify-between">
+                        <span class="absolute p-2 text-sm font-semibold m-2 text-white">-25%</span>
+                        <div class="bg-white c-img pt-116">
+                            <img src="img/bf40c338e899e57ef30fec2d00e865ec.png" alt="" class="">
+                        </div>
+                        <div class="text-center text-white text-product-child p-4">
+                            
+                            <a href="" class=""><p class="mb-4 lg:text-lg text-sm font-extrabold line-clamp-2">Kéo ngắn</p></a>
+                            <p class="line-through text-xs text-888">200.000 VNĐ</p>
+                            <p class="font-semibold mb-0 lg:mb-4">100.000 VNĐ</p>
+                        </div>
+                        <a href="" class="flex justify-center w-full items-center btn-product btn-red p-2 text-white">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add to cart
+                        </a>
                     </div>
-                    <div class="text-center text-white text-product-child">
-                        
-                        <p class="mb-4 text-lg font-extrabold line-clamp-2">Kéo ngắn</p>
-                        <p class="line-through text-xs">200.000 VNĐ</p>
-                        <p class="font-semibold mb-4">100.000 VNĐ</p>
-                    </div>
-                    <a href="" class="flex justify-center w-full items-center btn-red text-white">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        Add to cart
-                    </a>
                 </div>
-                <div class="flex-1 mx-9">
-                    <span class="absolute p-2 text-sm font-semibold m-2">-25%</span>
-                    <div class="bg-white c-img pt-116">
-                        <img src="img/bf40c338e899e57ef30fec2d00e865ec.png" alt="" class="">
+                <div class="lg:w-1/4 w-1/2 px-2 mb-4 2xl:px-8 2xl:mb-16 FadeInUp">
+                    <div class="h-full flex flex-col justify-between">
+                        <span class="absolute p-2 text-sm font-semibold m-2 text-white">-25%</span>
+                        <div class="bg-white c-img pt-116">
+                            <img src="img/bf40c338e899e57ef30fec2d00e865ec.png" alt="" class="">
+                        </div>
+                        <div class="text-center text-white text-product-child p-4">
+                            
+                            <a href="" class=""><p class="mb-4 lg:text-lg text-sm font-extrabold line-clamp-2">Kéo ngắn</p></a>
+                            <p class="line-through text-xs text-888">200.000 VNĐ</p>
+                            <p class="font-semibold mb-0 lg:mb-4">100.000 VNĐ</p>
+                        </div>
+                        <a href="" class="flex justify-center w-full items-center btn-product btn-red p-2 text-white">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add to cart
+                        </a>
                     </div>
-                    <div class="text-center text-white text-product-child">
-                        
-                        <p class="mb-4 text-lg font-extrabold line-clamp-2">Kéo ngắn</p>
-                        <p class="line-through text-xs">200.000 VNĐ</p>
-                        <p class="font-semibold mb-4">100.000 VNĐ</p>
+                </div>
+                <div class="lg:w-1/4 w-1/2 px-2 mb-4 2xl:px-8 2xl:mb-16 FadeInUp">
+                    <div class="h-full flex flex-col justify-between">
+                        <span class="absolute p-2 text-sm font-semibold m-2 text-white">-25%</span>
+                        <div class="bg-white c-img pt-116">
+                            <img src="img/bf40c338e899e57ef30fec2d00e865ec.png" alt="" class="">
+                        </div>
+                        <div class="text-center text-white text-product-child p-4">
+                            
+                            <a href="" class=""><p class="mb-4 lg:text-lg text-sm font-extrabold line-clamp-2">Kéo ngắn</p></a>
+                            <p class="line-through text-xs text-888">200.000 VNĐ</p>
+                            <p class="font-semibold mb-0 lg:mb-4">100.000 VNĐ</p>
+                        </div>
+                        <a href="" class="flex justify-center w-full items-center p-2 btn-product btn-red text-white">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add to cart
+                        </a>
                     </div>
-                    <a href="" class="flex justify-center w-full items-center btn-red text-white">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        Add to cart
-                    </a>
                 </div>
             </div>
         </div>
     </section>
+    <section class="list">
+        <div class="relative overflow-hidden pb-0 lg:pb-36">
+            <div class="container infor-list w-11/12 text-center z-10 relative">
+                <p class="font-bold 2xl:text-4xl lg:text-2xl text-xl text-white my-5 lg:my-14 FadeInUp">Danh mục sản phẩm</p>
+                <div class="flex flex-wrap justify-center">
+                    <div class="w-1/2 px-2 mb-4 lg:w-1/4 FadeInUp">
+                        <div class="c-img p-66">
+                            <img src="img/0d7931fa8ba7ae00f9f9d413253f893d.jpg" alt="" class="">
+                        </div>
+                        <a href="" class="btn-banner btn btn-list lg:text-base text-sm p-2 uppercase mt-3 font-bold text-white">Kéo nhà bếp</a>
+                    </div>
+                    <div class="w-1/2 px-2 mb-4 lg:w-1/4 FadeInUp ">
+                        <div class="c-img p-66">
+                            <img src="img/0d7931fa8ba7ae00f9f9d413253f893d.jpg" alt="" class="">
+                        </div>
+                        <a href="" class="btn-banner btn btn-list p-2 lg:text-base text-sm uppercase mt-3 font-bold text-white">Kéo nhà bếp</a>
+                    </div>
+                    <div class="w-1/2 px-2 mb-4 lg:w-1/4 FadeInUp ">
+                        <div class="c-img p-66">
+                            <img src="img/0d7931fa8ba7ae00f9f9d413253f893d.jpg" alt="" class="">
+                        </div>
+                        <a href="" class="btn-banner btn btn-list p-2 lg:text-base text-sm uppercase mt-3 font-bold text-white">Kéo nhà bếp</a>
+                    </div>
+                    <div class="w-1/2 px-2 mb-4 lg:w-1/4 FadeInUp">
+                        <div class="c-img p-66">
+                            <img src="img/6f64b8661b39a054560d3cb268cd443c.jpg" alt="" class="">
+                        </div>
+                        <a href="" class="btn-banner btn btn-list p-2 lg:text-base text-sm uppercase mt-3 font-bold text-white">Kéo nhà bếp</a>
+                    </div>  
+                    <div class="w-1/2 px-2 mb-4 lg:w-1/4 FadeInUp">
+                        <div class="c-img p-66">
+                            <img src="img/0d7931fa8ba7ae00f9f9d413253f893d.jpg" alt="" class="">
+                        </div>
+                        <a href="" class="btn-banner btn btn-list p-2 lg:text-base text-sm uppercase mt-3 font-bold text-white">Kéo nhà bếp</a>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container px-0 lg:px-20">
+            <a href="" class="footer-logo block lg:hidden mx-auto py-6">
+                <img src="img/LOGO.png" alt="" class="">
+            </a>
+            <div class="flex flex-wrap">
+                <div class="w-full px-2 mb-4 sm:w-1/2 lg:w-1/4">
+                    <p class="font-semibold my-2 lg:my-8">Chăm sóc khách hàng</p>
+                    <div class="">
+                        <ul class="">
+                            <li class="mb-0 lg:mb-6">
+                                <a href="" class="hover-red text-6d">Dịch vụ khách hàng</a></li>
+                            <li class="mb-0 lg:mb-6"><a href="" class="hover-red text-6d">Liên hệ</a></li>
+                            <li class="mb-0 lg:mb-6"><a href="" class="hover-red text-6d">Tin tức</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="w-full px-2 mb-4 sm:w-1/2 lg:w-1/4">
+                    <p class="font-semibold my-2 lg:my-8">Chính sách</p>
+                    <div class="">
+                        <ul class="">
+                            <li class="mb-0 lg:mb-6"><a href="" class="hover-red text-6d">Dịch vụ vận chuyển</a></li>
+                            <li class="mb-0 lg:mb-6"><a href="" class="hover-red text-6d">Chính sách đổi trả, bảo hành</a></li>
+                            <li class="mb-0 lg:mb-6"><a href="" class="hover-red text-6d">Chính sách & quy định chung</a></li>
+                            <li class="mb-0 lg:mb-6"><a href="" class="hover-red text-6d">Chính sách bảo mật</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="w-full px-2 mb-4 sm:w-1/2 lg:w-1/4">
+                    <p class="font-semibold my-2 lg:my-8">Thời gian hoạt động</p>
+                    <div class="">
+                        <ul class="">
+                            <li class="mb-0 lg:mb-6 text-6d">Mở cửa: Từ 6h - 23h từ Thứ 2 - Chủ nhật</li>
+                            <li class="mb-0 lg:mb-6 text-6d">Ngày Lễ làm việc bình thường, Tết nghỉ</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="w-full px-2 mb-4 sm:w-1/2 lg:w-1/4">
+                    <p class="font-semibold my-2 lg:my-8">Địa chỉ công ty</p>
+                    <div class="">
+                        <ul class="">
+                            <li class="mb-0 lg:mb-6"><a href="" class="hover-red text-6d">Địa chỉ: Số 25 Vũ Ngọc Phan, Láng Hạ, Đống Đa, Hà Nội </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-between items-end pb-4">
+                <div class="">
+                    <a href="" class="footer-logo hidden lg:block mb-4">
+                        <img src="img/LOGO.png" alt="" class="">
+                    </a>
+                    <div class="flex flex-wrap">
+                        <a href="" class="item w-7 h-5 img_full img-h-full img-contain mr-4 block">
+                            <img src="img/Group 1000005840.png" alt="" class="">
+                        </a>
+                        <a href="" class="item w-7 h-5 img_full img-h-full img-contain mr-4 block">
+                            <img src="img/Group 1000005841.png" alt="" class="">
+                        </a>
+                        <a href="" class="item w-7 h-5 img_full img-h-full img-contain mr-4 block">
+                            <img src="img/logo1.png" alt="" class="">
+                        </a>
+                        <a href="" class="item w-7 h-5 img_full img-h-full img-contain mr-4 block">
+                            <img src="img/logo11.png" alt="" class="">
+                        </a>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="flex justify-between flex-col lg:flex-row">
+                        <p class="font-semibold hotline-footer mb-3 ">Hotline: <a href="" class="hover-red font-bold text-lg sm:text-2xl">037 265 6666</a></p>
+                        <div class="flex mb-6 lg:mb-0">
+                            <a href="" class="w-8 h-8 mr-2 img_full img-contain img-h-full rounded-full overflow-hidden block bg-black">
+                                <img src="img/ector11.png" alt="" class="">
+                            </a>
+                            <a href="" class="w-8 h-8 mr-2 img_full img-contain img-h-full rounded-full overflow-hidden block bg-black">
+                                <img src="img/ector11.png" alt="" class="">
+                            </a>
+                            <a href="" class="w-8 h-8 mr-2 img_full img-contain img-h-full rounded-full overflow-hidden block bg-black">
+                                <img src="img/ector11.png" alt="" class="">
+                            </a>
+                            <a href="" class="w-8 h-8 mr-2 img_full img-contain img-h-full rounded-full overflow-hidden block bg-black">
+                                <img src="img/ector11.png" alt="" class="">
+                            </a>
+                        </div>
+
+                    </div>
+                    <p class="text-sm sm:text-base">Giấy phép kinh doanh: 0106662412 , do sở KH & ĐT TP. Hà Nội cấp ngày 10/10/2014</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="./chan.js"></script>
 </body>
