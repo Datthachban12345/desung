@@ -1,4 +1,14 @@
+
 var CART = {
+    paddingBanner: function(){
+      const paddingHeader = document.querySelector('.close-header');
+      const banner = document.querySelector('.banner');
+      
+      window.addEventListener('resize', function() {
+        var height = paddingHeader.offsetHeight;
+        banner.style.paddingTop = height.toString() + 'px';
+      });
+    },
     header: function(){
         let navToggle = document.querySelector('.header-menu-bar');
         let headerNavbar = document.querySelector('.menu');
@@ -77,3 +87,4 @@ CART.header();
 swiper.banner();
 CART.headerTop();
 CART.keyframe();
+CART.paddingBanner();

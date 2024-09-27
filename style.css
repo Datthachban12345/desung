@@ -16,6 +16,12 @@ a, img {
     border-radius: inherit;
     background-attachment: fixed;
 }
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
 .text-6d {
     color: #6D6D6D;
 }
@@ -176,6 +182,43 @@ img {
     width:100%;
 }
 
+
+.btn-list{
+    /* background:red; */
+    color:white;
+    width:auto;
+    position:relative;
+    z-index:1;
+    overflow:hidden;
+    border-radius: 16px;
+}
+.btn-list:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #D82A30;
+    z-index: -2;
+}
+.btn-list:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color:red;
+    transition: all .3s;
+    z-index: -1;
+}
+.btn-list:hover{
+    color:#fff;
+}
+.btn-list:hover:before{
+    width:100%;
+}
 .btn-product{
     /* background:red; */
     color:white;
@@ -191,7 +234,7 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: red;
+    background-color: rgba(216, 42, 48, 0.75);
     z-index: -2;
 }
 .btn-product:before{
@@ -201,7 +244,7 @@ img {
     left: 0;
     width: 0%;
     height: 100%;
-    background-color:rgba(216, 42, 48, 0.75);
+    background-color:red;
     transition: all .3s;
     z-index: -1;
 }
@@ -245,8 +288,8 @@ img {
     border: 1px solid #CECECE;
 }
 .product-child > div > div > span{
-    z-index:1;
-    background:red;
+    z-index:3;
+    background:rgba(216, 42, 48, 0.75);
     border-radius: 3px;
 }
 .list > div{
@@ -308,7 +351,7 @@ img {
         transition:all 0.5s;
     }
     .header-lists{
-        background:red;
+        background:rgba(216, 42, 48, 0.75);
     }
     .form-search input{
         min-width:18.75rem;
@@ -338,7 +381,7 @@ img {
         min-height:0px;
         white-space: nowrap;    
         min-width: 100%;
-        background: red;
+        background: rgba(216, 42, 48, 0.75);
         z-index: 1;
         opacity: 0;
         pointer-events: none;
