@@ -39,6 +39,12 @@ a, img {
 .pt-116{
     padding-top:116%;
 }
+.pt-100{
+    padding-top:100%;
+}
+.pt-532{
+    padding-top:532px;
+}
 .btn {
     display: inline-flex;
     align-items: center;
@@ -336,6 +342,82 @@ img {
     left: 123%;
     transition: all 1s ease;
 }
+.img-introduce .c-img{
+    padding-top:35%;
+}
+.img-introduce .c-img:first-child{
+    margin-top:10%;
+}
+.img-introduce .c-img:nth-of-type(2){
+    margin-bottom:10%;
+    bottom:0;
+    right:0;
+}
+.max-w-60{
+    max-width:60%;
+}
+.img-introduce > div > img{
+    object-fit: cover;
+}
+.introduce-3{
+    background-image:url('https://daesung.com.vn/theme/frontend/images/bg-vision.png');
+    object-fit:contain;
+    background-repeat:no-repeat;
+    min-height: 420px;
+    background-position: center;
+}
+.system-intro ul li::before {
+    content: '•';          /* Thêm dấu chấm tròn */
+    font-size: 20px;       /* Tăng kích thước của dấu chấm */
+    color: black;          /* Màu của dấu chấm */
+    display: inline-block;
+    width: 1rem;
+    margin-right: 10px; 
+    margin-bottom: 0.3rem;   /* Khoảng cách giữa dấu chấm và nội dung */
+    font-weight: 700;  
+}
+  .system-intro ul li {
+    display: flex;
+    align-items: center;
+  }
+
+  /*product*/
+.breadcrumb li{
+    display:inline-block;
+}
+.breadcrumb a:hover{
+    transition:all .5s;
+}
+.breadcrumb a:hover{
+    color:#D82A30;
+}
+.breadcrumb li:not(:last-child) a:after {
+    content: "|";
+    margin: 0 4px;
+}
+.swiper-detail-prev, .swiper-detail-next {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 50px;
+    height:50px;
+    background:#eee;
+    border: 1px solid #fff;
+    z-index: 10;
+}
+.swiper-detail-next {
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+.swiper-detail-prev {
+    left: 0;
+    transform: translate(50%, -50%);
+}
 @media screen and (min-width:1024px) {  
     .banner .container{
         top:50%;
@@ -397,6 +479,9 @@ img {
     }
 }
 @media screen and (max-width:1023px) {
+    .pt-532{
+        padding-top:232px;
+    }
     .max-3{
         max-width:3.375rem;
     }

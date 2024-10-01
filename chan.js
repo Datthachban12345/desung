@@ -1,12 +1,16 @@
 
 var CART = {
     paddingBanner: function(){
-      const paddingHeader = document.querySelector('.close-header');
-      const banner = document.querySelector('.banner');
-      
+      const paddingHeader = document.querySelector('header');
+      // lần đầu chỉnh bởi vì lúc này chưa có resize
+      const nextSiblingElement = paddingHeader.nextElementSibling;
+      var height = paddingHeader.offsetHeight;
+      nextSiblingElement.style.paddingTop = height.toString() + 'px';
+
       window.addEventListener('resize', function() {
-        var height = paddingHeader.offsetHeight;
-        banner.style.paddingTop = height.toString() + 'px';
+        // Kiểm tra và hiển thị kết quả
+          var height = paddingHeader.offsetHeight;
+          nextSiblingElement.style.paddingTop = height.toString() + 'px';
       });
     },
     header: function(){
@@ -78,13 +82,23 @@ var CART = {
     });
   },
 };
+
 var swiper = {
     banner:function(){
-        var swiperBanner = new Swiper(".swiper-banner", {});
+      var swiperBanner = new Swiper(".swiper-banner", {});
+    },
+    detail:function(){
+      var swiperDetail = new Swiper(".swiper-detail", {
+        navigation: {
+          nextEl: ".swiper-detail-next",
+          prevEl: ".swiper-detail-prev",
+        },
+      });
     }
 }
 CART.header();
 swiper.banner();
+swiper.detail();
 CART.headerTop();
 CART.keyframe();
 CART.paddingBanner();
