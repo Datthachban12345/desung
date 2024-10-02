@@ -1,5 +1,6 @@
 a, img {
     box-sizing: border-box;
+    cursor:pointer;
   }
   .btn-red{
     background:red;
@@ -16,12 +17,15 @@ a, img {
     border-radius: inherit;
     background-attachment: fixed;
 }
+.ability .c-img img{
+    object-fit: contain;
+}
 .montserrat {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-  }
+}
 .text-6d {
     color: #6D6D6D;
 }
@@ -35,6 +39,15 @@ a, img {
 }
 .p-66{
     padding-top:66%;
+}
+.rating{
+    transition:all .1s;
+}
+.rating.active{
+    color:yellow;
+}
+.input-product-minus{
+    pointer-events: none;
 }
 .pt-116{
     padding-top:116%;
@@ -64,6 +77,12 @@ a, img {
     list-style: none;
     padding: 0;
     z-index: 1;
+}
+.swiper-thumb .swiper-slide.active{
+    border:1px solid #D82A30;
+}
+.swiper-thumb .swiper-slide{
+    border:1px solid #eee;
 }
 img {
     width: 100%;
@@ -417,6 +436,52 @@ img {
 .swiper-detail-prev {
     left: 0;
     transform: translate(50%, -50%);
+}
+.product-infor > p:first-child{
+    padding-bottom: 1.75rem;
+    border-bottom: 4px solid #D82A30;
+}
+.product-infor-cost{
+    color:#D82A30;
+}
+.product-infor-cost-old{
+    color:#969696;
+    text-decoration:line-through;
+}
+.input-product > div{
+    background:#eee;
+    font-size:30px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.input-product > :last-child{
+    border-start-end-radius:0.25rem;
+    border-end-end-radius: 0.25rem;
+}
+.input-product input{
+    border: 1px solid #A8A8A8;
+    outline:none;
+}
+.input-product > :first-child{
+    border-start-start-radius: 0.25rem;
+    border-end-start-radius: 0.25rem;
+}
+.product-infor label > button{
+    background:#D82A30;
+    color:white;
+}
+.chat-zalo{
+    background:#0068FF;
+}
+.box-product-infor{
+    border-radius:5px;
+    border: 0.5px solid #eee;
+}
+/* table-product */
+.table-product div{
+    background: #EEEEEE;
+
 }
 @media screen and (min-width:1024px) {  
     .banner .container{
