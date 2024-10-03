@@ -116,25 +116,36 @@ var CART = {
   })
 },
   rattingStar: function(){
+    const star = document.querySelector('.star-number');
     const rating = document.querySelectorAll('.rating');
-    
+    var starNumber = star.getAttribute('number');
+    for(i=0;i < parseInt(starNumber);i++){
+      rating[i].classList.add('active');
+    }
     rating.forEach(function(nameImg,X){
       // từ trên xuống dưới từ trái qua phải
       nameImg.addEventListener("mouseenter",function(e){
-        console.log("hello");
         rating.forEach(bar => bar.classList.remove('active'));
         for(i=0;i <= X;i++){
           rating[i].classList.add('active');
         }
       })
     })
-
+    star.addEventListener("mouseleave",function(e){
+      var starNumber = star.getAttribute('number');
+      rating.forEach(bar => bar.classList.remove('active'));
+      for(i=0;i < parseInt(starNumber);i++){
+        rating[i].classList.add('active');
+      }
+    })
     rating.forEach(function(nameImg,X){
       // từ trên xuống dưới từ trái qua phải
       nameImg.addEventListener("click",function(e){
         for(i=0;i <= X;i++){
           rating[i].classList.add('active');
         }
+        star.setAttribute('number', X + 1);
+        alert("rating thành công");
       })
     })
   }

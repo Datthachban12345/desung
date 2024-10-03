@@ -32,6 +32,9 @@ a, img {
 .text-888{
     color: #888;
 }
+.text-eb{
+    color:#EB484E;
+}
 .c-img {
     display: block;
     position: relative;
@@ -42,6 +45,7 @@ a, img {
 }
 .rating{
     transition:all .1s;
+    cursor:pointer;
 }
 .rating.active{
     color:yellow;
@@ -280,6 +284,42 @@ img {
     width:100%;
 }
 
+.btn-product-detail{
+    /* background:red; */
+    color:white;
+    width:auto;
+    position:relative;
+    z-index:1;
+    overflow:hidden;
+}
+.btn-product-detail:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(216, 42, 48, 0.75);
+    z-index: -2;
+}
+.btn-product-detail:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color:red;
+    transition: all .3s;
+    z-index: -1;
+}
+.btn-product-detail:hover{
+    color:#fff;
+}
+.btn-product-detail:hover::before{
+    width:100%;
+}
+
 .form-earch input::placeholder{
     color:#BCBCBD;
 }
@@ -313,6 +353,17 @@ img {
     border: 1px solid #CECECE;
 }
 .product-child > div > div > span{
+    z-index:3;
+    background:rgba(216, 42, 48, 0.75);
+    border-radius: 3px;
+}
+.product-similar-child{
+    background:#F6F6F6;
+}
+.product-similar-child > div > div{
+    border: 1px solid #CECECE;
+}
+.product-similar-child > div > div > span{
     z-index:3;
     background:rgba(216, 42, 48, 0.75);
     border-radius: 3px;
@@ -422,7 +473,7 @@ img {
     position: absolute;
     top: 50%;
     cursor: pointer;
-    transition: all 0.3s;
+    transition: all 0.5s;
     width: 50px;
     height:50px;
     background:#eee;
@@ -437,12 +488,16 @@ img {
     left: 0;
     transform: translate(50%, -50%);
 }
+.swiper-detail-next:hover,.swiper-detail-prev:hover {
+    background-color: #D82A30;
+    color:white;
+}
 .product-infor > p:first-child{
     padding-bottom: 1.75rem;
     border-bottom: 4px solid #D82A30;
 }
 .product-infor-cost{
-    color:#D82A30;
+    color:#EB484E;
 }
 .product-infor-cost-old{
     color:#969696;
@@ -473,16 +528,27 @@ img {
 }
 .chat-zalo{
     background:#0068FF;
+    transition:all 0.5s;
+}
+.chat-zalo:hover{
+    color:#D82A30;
 }
 .box-product-infor{
     border-radius:5px;
     border: 0.5px solid #eee;
 }
 /* table-product */
-.table-product div{
+.table-product > div > div{
     background: #EEEEEE;
-
 }
+table, td {
+    border: 1px solid black; /* Đường viền bảng */
+    border-collapse: collapse; /* Gộp các đường viền lại */
+}
+
+td {
+    padding:10px 5px 5px 40px ; /* Khoảng cách giữa nội dung và đường viền */
+  }
 @media screen and (min-width:1024px) {  
     .banner .container{
         top:50%;
@@ -644,6 +710,13 @@ img {
     }
     .menu > li > ul >li{
         padding-left: 10px;
+    }
+    .table-product table{
+        font-size:0.875rem;
+        line-height:1.25rem;
+    }
+    .table-product table td{
+        padding: 5px 2px 2px 10px;
     }
 }
 .hover-red:hover{
